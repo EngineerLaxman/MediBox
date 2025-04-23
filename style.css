@@ -3,37 +3,39 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  body {
+}
+
+/* Body */
+body {
     font-family: 'Segoe UI', sans-serif;
     background: #f5f7fa;
     color: #333;
     padding: 20px;
     line-height: 1.6;
-  }
-  
-  /* Header */
-  header {
+}
+
+/* Header */
+header {
     text-align: center;
     padding: 40px 20px;
     background: #1976d2;
     color: #fff;
     border-radius: 12px;
     margin-bottom: 40px;
-  }
-  
-  header h1 {
+}
+
+header h1 {
     font-size: 3em;
     margin-bottom: 10px;
-  }
-  
-  header p {
+}
+
+header p {
     font-size: 1.2em;
     margin-bottom: 20px;
-  }
-  
-  .btn {
+}
+
+/* Button */
+.btn {
     display: inline-block;
     padding: 12px 24px;
     background: #fff;
@@ -41,122 +43,188 @@
     border-radius: 8px;
     text-decoration: none;
     font-weight: bold;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: background 0.3s;
-  }
-  
-  .btn:hover {
+}
+
+.btn:hover {
     background: #e3f2fd;
-  }
-  
-  /* Sections */
-  section {
+}
+
+/* Sections */
+section {
     max-width: 960px;
     margin: 0 auto 40px auto;
     padding: 0 20px;
-  }
-  
-  section h2 {
-    font-size: 2em;
+}
+
+/* Section Titles */
+section h2 {
+    font-size: 2.5em;
     margin-bottom: 15px;
     text-align: center;
     color: #1976d2;
-  }
-  
-  section p {
+}
+
+section p {
     font-size: 1.1em;
     text-align: center;
-  }
-  
-  /* Features & Audience */
-  .features ul,
-  .audience ul {
+    margin-bottom: 20px;
+}
+
+/* Features & Audience */
+.features ul,
+.audience ul,
+.health-blog ul,
+.related-tools ul {
     list-style: none;
     padding: 0;
     margin-top: 15px;
     text-align: center;
-  }
-  
-  .features li,
-  .audience li {
+}
+
+.features li,
+.audience li,
+.health-blog li,
+.related-tools li {
     margin: 10px 0;
     font-size: 1.1em;
-  }
-  
-  /* Gallery */
-  .gallery .screenshots {
+}
+
+/* Gallery */
+.gallery .screenshots {
     display: flex;
     overflow-x: auto;
     gap: 20px;
     padding: 20px 0;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
-  }
-  
-  .gallery .screenshots img {
+}
+
+.gallery .screenshots img {
     flex: 0 0 auto;
     width: 250px;
     height: auto;
     border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     scroll-snap-align: start;
     transition: transform 0.3s ease;
-  }
-  
-  .gallery .screenshots img:hover {
+}
+
+.gallery .screenshots img:hover {
     transform: scale(1.05);
-  }
-  
-  /* Scrollbar Styling */
-  .gallery .screenshots::-webkit-scrollbar {
+}
+
+/* Scrollbar Styling */
+.gallery .screenshots::-webkit-scrollbar {
     height: 8px;
-  }
-  .gallery .screenshots::-webkit-scrollbar-thumb {
+}
+
+.gallery .screenshots::-webkit-scrollbar-thumb {
     background-color: #ccc;
     border-radius: 10px;
-  }
-  
-  /* Footer */
-  footer {
+}
+
+/* Health Blog & Related Tools */
+.health-blog ul,
+.related-tools ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.health-blog li,
+.related-tools li {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+.health-blog a,
+.related-tools a {
+    text-decoration: none;
+    color: #1976d2;
+}
+
+.health-blog a:hover,
+.related-tools a:hover {
+    text-decoration: underline;
+}
+
+/* Ad Placements */
+.ad-top,
+.ad-middle,
+.ad-bottom,
+.ad-blog,
+.ad-tools {
+    margin: 20px 0;
+}
+
+/* FAQ Section */
+.faq ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.faq li {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+.faq strong {
+    color: #1976d2;
+}
+
+/* Footer */
+footer {
     text-align: center;
     font-size: 0.9em;
     color: #777;
     margin-top: 60px;
     padding: 20px;
     border-top: 1px solid #ddd;
-  }
-  
-  footer a {
+}
+
+footer a {
     color: #1976d2;
     text-decoration: none;
-  }
-  
-  footer a:hover {
+}
+
+footer a:hover {
     text-decoration: underline;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
     header h1 {
-      font-size: 2.2em;
+        font-size: 2.2em;
     }
-  
+
     .btn {
-      font-size: 1em;
-      padding: 10px 20px;
+        font-size: 1em;
+        padding: 10px 20px;
     }
-  
+
     .features li,
-    .audience li {
-      font-size: 1em;
+    .audience li,
+    .health-blog li,
+    .related-tools li {
+        font-size: 1em;
     }
-  
+
     .gallery .screenshots {
-      padding: 10px 0;
+        padding: 10px 0;
     }
-  
+
     .gallery .screenshots img {
-      width: 200px;
+        width: 200px;
     }
-  }
-  
+
+    section h2 {
+        font-size: 2em;
+    }
+
+    footer {
+        font-size: 0.8em;
+    }
+}
