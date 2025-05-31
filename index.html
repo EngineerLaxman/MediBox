@@ -6,16 +6,32 @@
   <title>MediBox - The Medicine Guide</title>
   <link rel="canonical" href="https://medibox-app.netlify.app/" />
   <link rel="stylesheet" href="style.css" />
+  
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1749956579028026" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">MediBox</a>
+      <ul class="nav-menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#review">Review</a></li>
+        <li><a href="#contact">Contact</a></li>
+ 
+      </ul>
+    </div>
+  </nav>
+
+  <header id="home">
     <h1>MediBox</h1>
     <p>The Medicine Guide</p>
     <a href="https://drive.google.com/uc?export=download&id=1R20VLc9Jj57pvbDgkK8chB6rGCmVxdX_" class="btn" download>📱 Download APK</a>
   </header>
 
-  <!-- Top Ad Placement -->
+  <!-- Top Ad -->
   <section class="ad-top">
     <ins class="adsbygoogle"
          style="display:block; text-align:center;"
@@ -25,32 +41,68 @@
          data-full-width-responsive="true"></ins>
   </section>
 
-  <section class="about">
+<section class="about" id="about" style="display: flex; align-items: center; gap: 2rem; padding: 2rem 1rem; max-width: 900px; margin: auto;">
+  
+  <!-- Image container -->
+  <div class="about-image" style="flex: 1; min-width: 250px;">
+    <img src="assets/logot.png" alt="About MediBox" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);" />
+  </div>
+  
+  <!-- Text container -->
+  <div class="about-text" style="flex: 2;">
     <h2>About MediBox</h2>
     <p>
-      MediBox is an all-in-one Android application designed to assist users with their medical needs. Whether you're managing prescriptions or caring for someone, MediBox is here to simplify your health journey.
+      MediBox was born from a simple idea: to make healthcare management easy, reliable, and accessible to everyone.
+      In today’s fast-paced world, managing your medicines and health information can be overwhelming. That’s why
+      we created a lightweight app that acts as your personal pocket health assistant.
     </p>
-  </section>
-
-  <section class="why">
-    <h2>Why Choose MediBox?</h2>
     <p>
-      Unlike other medical apps, MediBox is lightweight, fast, and privacy-first. Built with care, it ensures that all your health-related tasks are easy to track, understand, and share.
+      Whether you are a patient managing multiple medications, a caregiver supporting a loved one, or a healthcare professional,
+      MediBox provides essential tools like medicine reminders, prescription tracking, and caregiver sharing in a privacy-first environment.
     </p>
-  </section>
+    <p>
+      Our mission is to empower you to take control of your health by offering a simple, secure, and user-friendly platform
+      designed for all ages and tech skill levels. MediBox is developed with passion and care, crafted to ensure your health journey
+      is as smooth and stress-free as possible.
+    </p>
+    <p style="font-weight: 600; margin-top: 1rem;">
+      Join thousands of users trusting MediBox every day to stay on top of their health. Your well-being is our priority.
+    </p>
+  </div>
+</section>
 
-  <section class="features">
-    <h2>Key Features</h2>
-    <ul>
-      <li>💊 Medicine Reminders – Never miss a dose</li>
-      <li>📦 My MediBox – Track your current medications</li>
-      <li>👥 Caregiver Support – Share access with family or caretakers</li>
-      <li>📌 Job & Help Postings – Post or find medical help</li>
-      <li>🧴 Skin Disease Info – Includes visual aid and details</li>
-    </ul>
-  </section>
 
-  <!-- Middle Ad Placement (After Features) -->
+ 
+
+<section class="help-support" id="help-support" style="max-width: 900px; margin: 3rem auto; padding: 1rem;">
+  <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 2rem;">
+    <div style="flex: 1 1 300px;">
+      <h2>🤝 Helping Those in Need</h2>
+      <p>
+        MediBox is more than just a medicine guide — it’s a platform dedicated to supporting those who need medical assistance. 
+        Whether you are seeking help or want to offer support, our job and help postings feature connects you with people and caregivers in your community.
+      </p>
+      <p>
+        By bringing together patients, caregivers, and volunteers, MediBox fosters a caring network to ensure no one faces their health challenges alone.
+      </p>
+      <ul>
+        <li>Post or browse medical help requests</li>
+        <li>Connect with caregivers and volunteers nearby</li>
+        <li>Share medicine logs securely with trusted helpers</li>
+      </ul>
+      <p style="font-weight: 600;">
+        Together, we can make healthcare more accessible and compassionate for everyone.
+      </p>
+    </div>
+    <div style="flex: 1 1 250px;">
+      <img src="assets/requestmedicine.png" alt="Helping hands illustration" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);" />
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Middle Ad -->
   <section class="ad-middle">
     <ins class="adsbygoogle"
          style="display:block; text-align:center;"
@@ -60,20 +112,9 @@
          data-full-width-responsive="true"></ins>
   </section>
 
-  <section class="audience">
-    <h2>Who Is MediBox For?</h2>
-    <p>
-      MediBox is perfect for:
-    </p>
-    <ul>
-      <li>👨‍⚕️ Patients with regular medication schedules</li>
-      <li>👵 Elderly people needing caregiver assistance</li>
-      <li>👨‍👩‍👧 Families who manage health records together</li>
-      <li>💼 Health workers looking for job/posting options</li>
-    </ul>
-  </section>
 
-  <section class="gallery">
+  <!-- Gallery -->
+  <section class="gallery" id="gallery">
     <h2>App Screenshots</h2>
     <div class="screenshots scroll-container">
       <img src="assets/Screenshot1.jpg" alt="App Screenshot 1">
@@ -84,53 +125,151 @@
     </div>
   </section>
 
-  <!-- Health Blog Section for Content -->
-  <section class="health-blog">
-    <h2>📚 Latest Health Tips</h2>
-    <ul>
-      <li><strong>5 Ways to Build a Medicine Routine</strong> – Stick to it, even when life gets busy</li>
-      <li><strong>Top 10 Home Remedies for Skin Issues</strong> – What works and what doesn’t</li>
-      <li><strong>How to Support Elderly Medication Management</strong> – Tips for caregivers</li>
-    </ul>
-    <div class="ad-blog">
-      <ins class="adsbygoogle"
-           style="display:block; text-align:center; margin: 1rem 0;"
-           data-ad-client="ca-pub-1749956579028026"
-           data-ad-slot="4595805805"
-           data-ad-format="auto"
-           data-full-width-responsive="true"></ins>
+  <section class="care-support" id="care-support" style="max-width: 900px; margin: 3rem auto; padding: 1rem;">
+  <h2>🤝 Help & Caregiver Support</h2>
+  <p>
+    MediBox is not just about medicine — it's about building a compassionate community where care and support meet technology.
+  </p>
+
+  <p>
+    We understand that sometimes, people need more than reminders and prescriptions. That’s why MediBox offers a dedicated feature for job and help postings — allowing users to <strong>request or offer assistance</strong> in various roles like:
+  </p>
+
+  <ul>
+    <li>🧑‍⚕️ Caregivers and nursing help</li>
+    <li>👩‍🍳 Domestic helpers and attendants</li>
+    <li>👨‍🦯 Mobility or elderly support</li>
+    <li>📋 General health-related assistance</li>
+  </ul>
+
+  <p>
+    Users can publish job requests or offers, browse opportunities in their area, and connect securely through the app — making it easier to find and provide help when it’s needed the most.
+  </p>
+
+  <p style="font-weight: 600; margin-top: 1rem;">
+    Together, let’s build a connected community where support is just a tap away.
+  </p>
+</section>
+<section class="user-reviews" id="review" style="padding: 2rem 1rem; max-width: 1000px; margin: auto;">
+  <h2 style="text-align: center;">🌟 What Our Users Say</h2>
+  <div class="review-container">
+
+    <div class="review-card">
+      <p class="review-text">"MediBox has helped me keep track of my mom's medication schedule. The reminders are super helpful!"</p>
+      <p class="review-user">— Aditya Kumbhar</p>
     </div>
-  </section>
 
-  <!-- FAQ Section -->
-  <section class="faq">
-    <h2>❓ Frequently Asked Questions</h2>
-    <ul>
-      <li><strong>Q:</strong> Is MediBox free to use?<br><strong>A:</strong> Yes! All features are free with no hidden charges.</li>
-      <li><strong>Q:</strong> Will it work offline?<br><strong>A:</strong> Yes, features like reminders and My MediBox work offline.</li>
-      <li><strong>Q:</strong> Do you sell my data?<br><strong>A:</strong> No. MediBox is privacy-first and respects user data.</li>
-    </ul>
-  </section>
-
-  <!-- Related Tools Section -->
-  <section class="related-tools">
-    <h2>🔗 Other Tools You Might Like</h2>
-    <ul>
-      <li><a href="#">💧 Water Tracker</a> – Stay hydrated and healthy</li>
-      <li><a href="#">🧘 Health & Fitness Tracker</a> – Track steps, sleep, and goals</li>
-      <li><a href="#">🧠 Mental Wellness Guide</a> – Simple ways to de-stress</li>
-    </ul>
-    <div class="ad-tools">
-      <ins class="adsbygoogle"
-           style="display:block; text-align:center; margin: 1rem 0;"
-           data-ad-client="ca-pub-1749956579028026"
-           data-ad-slot="1676793147"
-           data-ad-format="auto"
-           data-full-width-responsive="true"></ins>
+    <div class="review-card">
+      <p class="review-text">"The caregiver support feature is a lifesaver. I found a reliable helper within two days."</p>
+      <p class="review-user">— Deepak Barge</p>
     </div>
-  </section>
 
-  <!-- Bottom Ad Placement -->
+    <div class="review-card">
+      <p class="review-text">"Very useful app for elderly people. Simple UI and works offline too!"</p>
+      <p class="review-user">— Aakash Kumar</p>
+    </div>
+
+    <div class="review-card">
+      <p class="review-text">"As a nursing student, I use MediBox to help neighbors and some tools are very useful in day to life"</p>
+      <p class="review-user">— Divya Munde</p>
+    </div>
+ <div class="review-card">
+      <p class="review-text">"The Medibox application is just wonderfull that helps people with medicines and money too."</p>
+      <p class="review-user">— Mohini Patil</p>
+    </div>
+
+    <div class="review-card">
+      <p class="review-text">"Very useful app for elderly people. Simple UI and works offline too!"</p>
+      <p class="review-user">— Anushka Mate</p>
+    </div>
+  </div>
+</section>
+
+<section class="faq" id="faq">
+  <h2>❓ Frequently Asked Questions</h2>
+
+  <div class="faq-item">
+    <button class="faq-question" aria-expanded="false" aria-controls="faq1" id="faq1-btn">
+      Is MediBox free?
+    </button>
+    <div id="faq1" class="faq-answer" role="region" aria-labelledby="faq1-btn" hidden>
+      Yes! MediBox is completely free to use without any hidden fees or in-app purchases. Our goal is to provide accessible healthcare support to everyone.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question" aria-expanded="false" aria-controls="faq2" id="faq2-btn">
+      Does it work offline?
+    </button>
+    <div id="faq2" class="faq-answer" role="region" aria-labelledby="faq2-btn" hidden>
+      Most of the core features, like medicine reminders and your saved prescriptions, work offline. However, some features such as job postings and community updates require an internet connection.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question" aria-expanded="false" aria-controls="faq3" id="faq3-btn">
+      What about my data privacy?
+    </button>
+    <div id="faq3" class="faq-answer" role="region" aria-labelledby="faq3-btn" hidden>
+      We respect your privacy deeply. MediBox does not collect, share, or sell any personal user data. Your information is stored securely on your device unless you choose to share it with caregivers.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question" aria-expanded="false" aria-controls="faq4" id="faq4-btn">
+      Can caregivers access my medication list?
+    </button>
+    <div id="faq4" class="faq-answer" role="region" aria-labelledby="faq4-btn" hidden>
+      Yes. You can securely share your medication log with trusted caregivers or family members. This feature helps them support you better by staying informed about your medication schedule.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question" aria-expanded="false" aria-controls="faq5" id="faq5-btn">
+      How can I set reminders for multiple medicines?
+    </button>
+    <div id="faq5" class="faq-answer" role="region" aria-labelledby="faq5-btn" hidden>
+      MediBox allows you to add multiple medications with flexible schedules. You can set recurring reminders at specific times of the day to ensure you never miss a dose.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question" aria-expanded="false" aria-controls="faq6" id="faq6-btn">
+      Is my data backed up or synced across devices?
+    </button>
+    <div id="faq6" class="faq-answer" role="region" aria-labelledby="faq6-btn" hidden>
+      Currently, MediBox stores your data locally on your device to prioritize privacy and offline use. We are exploring secure cloud sync options for future updates.
+    </div>
+  </div>
+</section>
+
+<script>
+  const faqButtons = document.querySelectorAll('.faq-question');
+
+  faqButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const expanded = button.getAttribute('aria-expanded') === 'true';
+      
+      // Close all answers
+      faqButtons.forEach(btn => {
+        btn.setAttribute('aria-expanded', 'false');
+        const answer = document.getElementById(btn.getAttribute('aria-controls'));
+        answer.hidden = true;
+      });
+
+      // If previously closed, open this one
+      if (!expanded) {
+        button.setAttribute('aria-expanded', 'true');
+        const answer = document.getElementById(button.getAttribute('aria-controls'));
+        answer.hidden = false;
+      }
+    });
+  });
+</script>
+
+
+
+  <!-- Bottom Ad -->
   <section class="ad-bottom">
     <ins class="adsbygoogle"
          style="display:block; text-align:center;"
@@ -140,17 +279,56 @@
          data-full-width-responsive="true"></ins>
   </section>
 
-  <footer>
-    <p>© 2025 MediBox. All rights reserved.</p>
-    <p>Have questions or feedback? <br>
-      📧 Email us at <a href="mailto:laxmangaidhankar44@gmail.com">laxmangaidhankar44@gmail.com</a>
-    </p>
-  </footer>
+<footer class="main-footer">
+  <div class="footer-container">
+    <!-- Contact Info -->
+    <div class="footer-section" id="contact">
+      <h3>📞 Contact</h3>
+      <p>Email: <a href="mailto:laxmangaidhankar44@gmail.com">mediboxsupport07@gmail.com</a></p>
+      <p>Location: India</p>
+    </div>
 
-  <script>
-    window.addEventListener("load", function () {
-      (adsbygoogle = window.adsbygoogle || []).push({});
-    });
-  </script>
+    <!-- Quick Links -->
+    <div class="footer-section">
+      <h3>🔗 Quick Links</h3>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#review">Review</a></li>
+        <li><a href="#faq">FAQ's</a></li>
+      </ul>
+    </div>
+
+<div class="footer-section">
+  <h3>Legal</h3>
+  <ul>
+    <li><a href="privacy-policy.html" target="_blank" rel="noopener">Privacy Policy</a></li>
+    <li><a href="terms-conditions.html" target="_blank" rel="noopener">Terms & Conditions</a></li>
+  </ul>
+</div>
+
+ 
+
+
+    <!-- Social Media -->
+    <div class="footer-section">
+      <h3>🌐 Follow Us</h3>
+      <div class="social-icons">
+        <a href="https://facebook.com" target="_blank" aria-label="Facebook">🔵</a>
+        <a href="https://twitter.com" target="_blank" aria-label="Twitter">🐦</a>
+        <a href="https://instagram.com" target="_blank" aria-label="Instagram">📸</a>
+        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">💼</a>
+      </div>
+    
+
+
+  <div class="footer-bottom">
+    <p>© 2025 MediBox. Designed with ❤️ in India.</p>
+  </div>
+  </div>
+</footer>
+
+
+
 </body>
 </html>
